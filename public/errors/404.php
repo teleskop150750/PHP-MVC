@@ -19,7 +19,7 @@
             <h1>404</h1>
             <h2>Page not found</h2>
         </div>
-        <a href="<?= WWW ?>">Homepage</a>
+        <a href="<?= PATH; ?>">Homepage</a>
     </div>
 </div>
 
