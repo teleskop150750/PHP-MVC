@@ -4,7 +4,7 @@
 namespace shop;
 
 
-Abstract class Singleton
+abstract class Singleton
 {
     /**
      * Объект одиночки храниться в статичном поле класса. Это поле — массив, так
@@ -18,12 +18,16 @@ Abstract class Singleton
      * Конструктор Одиночки всегда должен быть скрытым, чтобы предотвратить
      * создание объекта через оператор new.
      */
-    protected function __construct() { }
+    protected function __construct()
+    {
+    }
 
     /**
      * Одиночки не должны быть клонируемыми.
      */
-    protected function __clone() { }
+    protected function __clone()
+    {
+    }
 
     /**
      * Одиночки не должны быть восстанавливаемыми из строк.

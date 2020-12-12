@@ -16,6 +16,10 @@ class ErrorHandler
         set_exception_handler([$this, 'exceptionHandler']);
     }
 
+    /**
+     * Обрабочик исключений
+     * @param \Exception $e
+     */
     public function exceptionHandler(\Exception $e): void
     {
         $this->logErrors($e->getMessage(), $e->getFile(), $e->getLine());
@@ -35,7 +39,15 @@ class ErrorHandler
     }
 
 
-    protected function displayError(string $errorNumber, string $string, $file, int $line, int $responce = 404): void
+    /**
+     * отобразить ошибки
+     * @param string $errorNumber
+     * @param string $text
+     * @param $file
+     * @param int $line
+     * @param int $responce
+     */
+    protected function displayError(string $errorNumber, string $text, $file, int $line, int $responce = 404): void
     {
         http_response_code($responce);
         if ($responce === 404 && !DEBUG) {
