@@ -4,7 +4,6 @@
 namespace shop\base;
 
 
-use http\Encoding\Stream;
 
 class View
 {

@@ -6,7 +6,6 @@ use shop\Router;
 // пользовательские маршруты
 
 
-
 // маршруты по умолчанию
 Router::addRoute('^admin$', [
     'controller' => 'Main',
