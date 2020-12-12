@@ -4,7 +4,9 @@
 namespace shop\base;
 
 
-abstract class View
+use http\Encoding\Stream;
+
+class View
 {
     protected array $route;
     protected string $controller;
@@ -23,8 +25,53 @@ abstract class View
         $this->view = $view;
         $this->prefix = $route['prefix'];
         $this->meta = $meta;
-        if (is_null($layout)) {
+
+        if (!is_null($layout)) {
             $this->layout = $layout ?: LAYOUT;
+        } else {
+            $this->layout = null;
         }
+    }
+
+    /**
+     * рендер
+     * @param $data
+     * @throws \Exception
+     */
+    public function render(?array $data): void
+    {
+        if (is_array($data)){
+            extract($data);
+        }
+        $viewFile = APP . "/views/{$this->prefix}{$this->controller}/{$this->view}.php";
+
+        if (is_file($viewFile)) {
+            ob_start();
+            require_once $viewFile;
+            $content = ob_get_clean();
+        } else {
+            throw new \Exception("Не найден вид {$viewFile}", 500);
+        }
+
+        if (!is_null($this->layout)) {
+             $layoutFile = APP . "/views/layouts/{$this->layout}.php";
+            if (is_file($layoutFile)) {
+                require_once $layoutFile;
+            } else {
+                throw new \Exception("Не найден шаблон {$layoutFile}", 500);
+            }
+        }
+    }
+
+    /**
+     * задать метаданные
+     * @return string
+     */
+    public function getMeta(): string
+    {
+        $meta = '<title>' . $this->meta['title'] . '</title>' . PHP_EOL;
+        $meta .= '<meta name="description" content="' . $this->meta['description'] . '">' . PHP_EOL;
+        $meta .= '<meta name="keywords" content="' . $this->meta['keywords'] . '">' . PHP_EOL;
+        return $meta;
     }
 }

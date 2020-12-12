@@ -820,3 +820,264 @@
 [2020-12-12 17:56:58] Текст ошибки: Метод не найден app\controllers\MainController::index2 | Строка 63
         
 ========================
+[2020-12-12 20:01:25] Текст ошибки: Method name must be a string | Строка 64
+        
+========================
+[2020-12-12 20:01:26] Текст ошибки: Method name must be a string | Строка 64
+        
+========================
+[2020-12-12 20:01:26] Текст ошибки: Method name must be a string | Строка 64
+        
+========================
+[2020-12-12 20:01:27] Текст ошибки: Method name must be a string | Строка 64
+        
+========================
+[2020-12-12 20:01:27] Текст ошибки: Method name must be a string | Строка 64
+        
+========================
+[2020-12-12 20:01:27] Текст ошибки: Method name must be a string | Строка 64
+        
+========================
+[2020-12-12 20:01:27] Текст ошибки: Method name must be a string | Строка 64
+        
+========================
+[2020-12-12 20:02:26] Текст ошибки: syntax error, unexpected '}', expecting ';' or ',' | Строка 34
+        
+========================
+[2020-12-12 20:02:44] Текст ошибки: Typed property shop\base\Controller::$layout must not be accessed before initialization | Строка 29
+        
+========================
+[2020-12-12 20:03:18] Текст ошибки: Argument 2 passed to shop\base\View::__construct() must be of the type array, null given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:03:36] Текст ошибки: Argument 2 passed to shop\base\View::__construct() must be of the type array, null given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:04:12] Текст ошибки: Argument 2 passed to shop\base\View::__construct() must be of the type array, null given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:04:13] Текст ошибки: Argument 2 passed to shop\base\View::__construct() must be of the type array, null given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:04:24] Текст ошибки: Argument 2 passed to shop\base\View::__construct() must be of the type array, null given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:04:24] Текст ошибки: Argument 2 passed to shop\base\View::__construct() must be of the type array, null given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:04:24] Текст ошибки: Argument 2 passed to shop\base\View::__construct() must be of the type array, null given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:04:24] Текст ошибки: Argument 2 passed to shop\base\View::__construct() must be of the type array, null given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:05:36] Текст ошибки: Argument 4 passed to shop\base\View::__construct() must be of the type string, array given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:05:37] Текст ошибки: Argument 4 passed to shop\base\View::__construct() must be of the type string, array given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:05:37] Текст ошибки: Argument 4 passed to shop\base\View::__construct() must be of the type string, array given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 29 | Строка 18
+        
+========================
+[2020-12-12 20:05:42] Текст ошибки: Typed property shop\base\View::$view must be string, array used | Строка 23
+        
+========================
+[2020-12-12 20:06:38] Текст ошибки: Typed property shop\base\View::$view must be string, array used | Строка 23
+        
+========================
+[2020-12-12 20:06:38] Текст ошибки: Typed property shop\base\View::$view must be string, array used | Строка 23
+        
+========================
+[2020-12-12 20:07:00] Текст ошибки: Typed property shop\base\View::$view must be string, array used | Строка 23
+        
+========================
+[2020-12-12 20:07:08] Текст ошибки: Typed property shop\base\View::$view must be string, array used | Строка 23
+        
+========================
+[2020-12-12 20:07:39] Текст ошибки: Typed property shop\base\View::$view must be string, array used | Строка 23
+        
+========================
+[2020-12-12 20:07:58] Текст ошибки: Typed property shop\base\View::$prefix must not be accessed before initialization | Строка 33
+        
+========================
+[2020-12-12 20:07:59] Текст ошибки: Typed property shop\base\View::$prefix must not be accessed before initialization | Строка 33
+        
+========================
+[2020-12-12 20:07:59] Текст ошибки: Typed property shop\base\View::$prefix must not be accessed before initialization | Строка 33
+        
+========================
+[2020-12-12 20:07:59] Текст ошибки: Typed property shop\base\View::$prefix must not be accessed before initialization | Строка 33
+        
+========================
+[2020-12-12 20:08:15] Текст ошибки: Typed property shop\base\View::$view must not be accessed before initialization | Строка 33
+        
+========================
+[2020-12-12 20:10:15] Текст ошибки: Typed property shop\base\View::$view must not be accessed before initialization | Строка 33
+        
+========================
+[2020-12-12 20:10:53] Текст ошибки: Typed property shop\base\Controller::$layout must not be accessed before initialization | Строка 29
+        
+========================
+[2020-12-12 20:11:58] Текст ошибки: Typed property shop\base\View::$view must be string or null, array used | Строка 23
+        
+========================
+[2020-12-12 20:11:58] Текст ошибки: Typed property shop\base\View::$view must be string or null, array used | Строка 23
+        
+========================
+[2020-12-12 20:12:14] Текст ошибки: Typed property shop\base\View::$view must be string or null, array used | Строка 23
+        
+========================
+[2020-12-12 20:12:14] Текст ошибки: Typed property shop\base\View::$view must be string or null, array used | Строка 23
+        
+========================
+[2020-12-12 20:12:19] Текст ошибки: Typed property shop\base\View::$view must be string or null, array used | Строка 23
+        
+========================
+[2020-12-12 20:12:19] Текст ошибки: Typed property shop\base\View::$view must be string or null, array used | Строка 23
+        
+========================
+[2020-12-12 20:12:19] Текст ошибки: Typed property shop\base\View::$view must be string or null, array used | Строка 23
+        
+========================
+[2020-12-12 20:12:47] Текст ошибки: Typed property shop\base\View::$view must be string or null, array used | Строка 23
+        
+========================
+[2020-12-12 20:13:18] Текст ошибки: Argument 1 passed to shop\base\View::__construct() must be of the type string, array given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 30 | Строка 18
+        
+========================
+[2020-12-12 20:13:19] Текст ошибки: Argument 1 passed to shop\base\View::__construct() must be of the type string, array given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 30 | Строка 18
+        
+========================
+[2020-12-12 20:13:19] Текст ошибки: Argument 1 passed to shop\base\View::__construct() must be of the type string, array given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 30 | Строка 18
+        
+========================
+[2020-12-12 20:13:19] Текст ошибки: Argument 1 passed to shop\base\View::__construct() must be of the type string, array given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 30 | Строка 18
+        
+========================
+[2020-12-12 20:13:35] Текст ошибки: Argument 2 passed to shop\base\View::__construct() must be of the type array, null given, called in C:\OpenServer\domains\teleskopShop\vendor\shop\core\base\Controller.php on line 30 | Строка 18
+        
+========================
+[2020-12-12 20:49:52] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/Main/index.php | Строка 52
+        
+========================
+[2020-12-12 20:50:03] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/default.php | Строка 52
+        
+========================
+[2020-12-12 20:50:53] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/default.php | Строка 52
+        
+========================
+[2020-12-12 20:50:53] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/default.php | Строка 52
+        
+========================
+[2020-12-12 20:50:57] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/default.php | Строка 52
+        
+========================
+[2020-12-12 20:59:10] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 20:59:46] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 20:59:47] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 20:59:47] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 20:59:47] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 20:59:47] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 20:59:56] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 20:59:56] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 20:59:56] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 20:59:56] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:06:25] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:09:53] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:09:54] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:09:57] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:09:58] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:09:59] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:10:03] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:10:03] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:10:03] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:10:03] Текст ошибки: syntax error, unexpected '|', expecting variable (T_VARIABLE) | Строка 13
+        
+========================
+[2020-12-12 21:10:35] Текст ошибки: syntax error, unexpected ';', expecting function (T_FUNCTION) or const (T_CONST) | Строка 11
+        
+========================
+[2020-12-12 21:10:55] Текст ошибки: Typed property shop\base\Controller::$layout must not be accessed before initialization | Строка 29
+        
+========================
+[2020-12-12 21:12:16] Текст ошибки: Typed property shop\base\Controller::$layout must not be accessed before initialization | Строка 29
+        
+========================
+[2020-12-12 21:16:43] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 62
+        
+========================
+[2020-12-12 21:18:12] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 62
+        
+========================
+[2020-12-12 21:24:11] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 59
+        
+========================
+[2020-12-12 21:24:12] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 59
+        
+========================
+[2020-12-12 21:24:12] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 59
+        
+========================
+[2020-12-12 21:24:12] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 59
+        
+========================
+[2020-12-12 21:24:36] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 58
+        
+========================
+[2020-12-12 21:24:36] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 58
+        
+========================
+[2020-12-12 21:24:37] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 58
+        
+========================
+[2020-12-12 21:24:37] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 58
+        
+========================
+[2020-12-12 21:24:37] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 58
+        
+========================
+[2020-12-12 21:41:27] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 58
+        
+========================
+[2020-12-12 21:41:49] Текст ошибки: Не найден шаблон C:\OpenServer\domains\teleskopShop/app/views/layouts/test.php | Строка 58
+        
+========================

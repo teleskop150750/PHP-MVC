@@ -8,7 +8,10 @@ class MainController extends AppController
 {
     public function indexAction()
     {
-        debug($this->route);
-        echo 'indexAction';
+//        $this->layout = null;
+        $this->setMeta('TITLE','Описание...', 'Ключевые слова...');
+        $name ='John';
+        $age = 30;
+        $this->setData(compact('name', 'age'));
     }
 }

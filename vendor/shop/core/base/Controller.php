@@ -11,8 +11,13 @@ abstract class Controller
     protected string $model;
     protected string $view;
     protected string $prefix;
+    protected ?string $layout = '';
     protected array $data = [];
-    protected array $meta = [];
+    protected array $meta = [
+        'title'=>'',
+        'description'=>'',
+        'keywords'=>'',
+        ];
 
     public function __construct(array $route)
     {
@@ -21,6 +26,12 @@ abstract class Controller
         $this->model = $route['controller'];
         $this->view = $route['action'];
         $this->prefix = $route['prefix'];
+    }
+
+    public function getView()
+    {
+        $viewObject = new View($this->route, $this->meta, $this->layout, $this->view);
+        $viewObject->render($this->data);
     }
 
     /**
