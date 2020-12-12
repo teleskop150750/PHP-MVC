@@ -20,7 +20,7 @@ class ErrorHandler
      * Обрабочик исключений
      * @param \Exception $e
      */
-    public function exceptionHandler(\Exception $e): void
+    public function exceptionHandler(object $e): void
     {
         $this->logErrors($e->getMessage(), $e->getFile(), $e->getLine());
         $this->displayError('Исключение', $e->getMessage(), $e->getFile(), $e->getLine(), $e->getCode());

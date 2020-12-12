@@ -1,1 +1,123 @@
-<?phpnamespace shop;class Router{    /**     * маршруты     * @var array     */    private static array $routes = [];    /**     * текущий маршрут     * @var array     */    private static array $route = [];    /**     * добавить маршрут     * @param string $regexp     * @param array $route     */    public static function addRoute(string $regexp, array $route = []): void    {        self::$routes[$regexp] = $route;    }    /**     * получить массив маршрутов     * @return array     */    public static function getRoutes(): array    {        return self::$routes;    }    /**     * получить текущий маршрут     * @return array     */    public static function getRoute(): array    {        return self::$route;    }    public static function dispatch(string $url)    {        if (self::matchRoute($url)) {            echo 'OK';        } else {            throw new \Exception('Не найден маршрут');        }    }    /**     * поиск соответствующего маршрута     * @param string $url     * @return bool     */    public static function matchRoute(string $url): bool    {        foreach (self::$routes as $pattern => $route) {            if (preg_match("#{$pattern}#", $url, $matches)) {                debug($matches);                return true;            }        }        return false;    }}
+<?php
+
+
+namespace shop;
+
+
+class Router
+{
+    /**
+     * маршруты
+     * @var array
+     */
+    private static array $routes = [];
+
+    /**
+     * текущий маршрут
+     * @var array
+     */
+    private static array $route = [];
+
+    /**
+     * добавить маршрут
+     * @param string $regexp
+     * @param array $route
+     */
+    public static function addRoute(string $regexp, array $route = []): void
+    {
+        self::$routes[$regexp] = $route;
+    }
+
+    /**
+     * получить массив маршрутов
+     * @return array
+     */
+    public static function getRoutes(): array
+    {
+        return self::$routes;
+    }
+
+    /**
+     * получить текущий маршрут
+     * @return array
+     */
+    public static function getRoute(): array
+    {
+        return self::$route;
+    }
+
+    public static function dispatch(string $url)
+    {
+        if (self::matchRoute($url)) {
+            $controller = 'app\controllers\\' . self::$route['prefix'] . self::$route['controller'] . 'Controller';
+
+            if (class_exists($controller)) {
+                $controllerObject = new $controller(self::$route);
+                $action = self::formatAction(self::$route['action']) . 'Action';
+                if (method_exists($controllerObject, $action)) {
+                    $controllerObject->$action();
+                } else {
+                    throw new \Exception("Метод не найден {$controller}::{$action}", 404);
+                }
+            } else {
+                throw new \Exception("Класс не найден {$controller}", 404);
+            }
+        } else {
+            throw new \Exception('Не найден маршрут', 404);
+        }
+    }
+
+    /**
+     * поиск соответствующего маршрута
+     * @param string $url
+     * @return bool
+     */
+    public static function matchRoute(string $url): bool
+    {
+        foreach (self::$routes as $pattern => $route) {
+            if (preg_match("#{$pattern}#", $url, $matches)) {
+                foreach ($matches as $key => $value) {
+                    if (is_string($key)) {
+                        $route[$key] = $value;
+                    }
+                }
+
+                $route['controller'] = self::formatController($route['controller']);
+
+                if (empty($route['action'])) {
+                    $route['action'] = 'index';
+                }
+
+                if (!isset($route['prefix'])) {
+                    $route['prefix'] = '';
+                } else {
+                    $route['prefix'] .= '\\';
+                }
+                self::$route = $route;
+//                debug(self::$route);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * CamelCase
+     * @param string $name
+     * @return string
+     */
+    protected static function formatController(string $controller): string
+    {
+        return str_replace(' ', '', ucwords(str_replace('-', ' ', $controller)));
+    }
+
+    /**
+     * camelCase
+     * @param string $name
+     * @return string
+     */
+    protected static function formatAction(string $action): string
+    {
+        return lcfirst(self::formatController($action));
+    }
+}
