@@ -36,6 +36,11 @@ class Registry extends Singleton
         throw new \Exception('Дан неверный ключ');
     }
 
+
+    /**
+     * получить все свойства
+     * @return array
+     */
     public function getProperties ():array
     {
         return self::$properties;

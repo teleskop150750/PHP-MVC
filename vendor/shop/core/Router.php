@@ -46,6 +46,11 @@ class Router
         return self::$route;
     }
 
+    /**
+     * направить на страницу
+     * @param string $url
+     * @throws \Exception
+     */
     public static function dispatch(string $url)
     {
         if (self::matchRoute($url)) {

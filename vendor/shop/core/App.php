@@ -18,7 +18,10 @@ class App
         Router::dispatch($query);
     }
 
-    protected function getParams()
+    /**
+     * задать параметры
+     */
+    protected function getParams(): void
     {
         $params = require_once CONF . '/params.php';
         if (!empty($params)) {
