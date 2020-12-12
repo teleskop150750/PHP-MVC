@@ -102,7 +102,6 @@ class Router
                     $route['prefix'] .= '\\';
                 }
                 self::$route = $route;
-//                debug(self::$route);
                 return true;
             }
         }
