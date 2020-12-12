@@ -14,8 +14,6 @@ class Db extends Singleton
         R::setup($db['dsn'], $db['user'], $db['pass']);
         if (!R::testConnection()) {
             throw new \Exception('Нет соединения с БД', 500);
-        } else {
-            echo 'Соденение';
         }
         R::freeze(true);
         if (DEBUG) {
