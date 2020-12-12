@@ -3,15 +3,16 @@
 
 namespace app\controllers;
 
+use RedBeanPHP\R;
 
 class MainController extends AppController
 {
     public function indexAction()
     {
-//        $this->layout = null;
+        $posts = R::findAll('test');
         $this->setMeta('TITLE','Описание...', 'Ключевые слова...');
         $name ='John';
         $age = 30;
-        $this->setData(compact('name', 'age'));
+        $this->setData(compact('name', 'age', 'posts'));
     }
 }

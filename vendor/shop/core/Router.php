@@ -47,12 +47,14 @@ class Router
     }
 
     /**
-     * направить на страницу
+     * перейти на страницу
      * @param string $url
      * @throws \Exception
      */
-    public static function dispatch(string $url)
+    public static function dispatch(string $url): void
     {
+        $url = self::removeQueryString($url);
+
         if (self::matchRoute($url)) {
             $controller = 'app\controllers\\' . self::$route['prefix'] . self::$route['controller'] . 'Controller';
 
@@ -112,7 +114,7 @@ class Router
      * @param string $name
      * @return string
      */
-    protected static function formatController(string $controller): string
+    private static function formatController(string $controller): string
     {
         return str_replace(' ', '', ucwords(str_replace('-', ' ', $controller)));
     }
@@ -122,8 +124,17 @@ class Router
      * @param string $name
      * @return string
      */
-    protected static function formatAction(string $action): string
+    private static function formatAction(string $action): string
     {
         return lcfirst(self::formatController($action));
+    }
+
+    private static function removeQueryString(string $url): string
+    {
+        $params = explode('&', $url, 2);
+        if (strpos($params[0], '=') === false) {
+            return rtrim($params[0], '/');
+        }
+        return '';
     }
 }
