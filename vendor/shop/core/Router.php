@@ -129,6 +129,11 @@ class Router
         return lcfirst(self::formatController($action));
     }
 
+    /**
+     * удалить GET параметры из url
+     * @param string $url
+     * @return string
+     */
     private static function removeQueryString(string $url): string
     {
         $params = explode('&', $url, 2);
