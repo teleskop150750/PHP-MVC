@@ -15,7 +15,6 @@ class MainController extends AppController
         $name ='John';
         $age = 30;
         $cache = Cache::getInstance();
-//        $cache->set('test', $name);
         $date = $cache->get('test');
         debug($date, 'test');
         $this->setData(compact('name', 'age', 'posts'));
